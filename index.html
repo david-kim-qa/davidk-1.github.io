@@ -45,6 +45,8 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#team" class="text-gray-600 hover:text-blue-600 transition duration-300">Our Team</a>
+                <a href="#calculator" class="text-gray-600 hover:text-blue-600 transition duration-300">Calculator</a>
                 <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition duration-300">Testimonials</a>
                 <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Contact Us</a>
             </nav>
@@ -56,6 +58,8 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
             <a href="#services" class="block text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
             <a href="#about" class="block text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+            <a href="#team" class="block text-gray-600 hover:text-blue-600 transition duration-300">Our Team</a>
+            <a href="#calculator" class="block text-gray-600 hover:text-blue-600 transition duration-300">Calculator</a>
             <a href="#testimonials" class="block text-gray-600 hover:text-blue-600 transition duration-300">Testimonials</a>
             <a href="#contact" class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Contact Us</a>
         </div>
@@ -111,12 +115,79 @@
         <section id="about" class="bg-white py-20 fade-in-section">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Our+Team" alt="Financial consulting team" class="rounded-lg shadow-xl">
+                    <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Our+Office" alt="Financial consulting office" class="rounded-lg shadow-xl">
                 </div>
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Your Trusted Partners in Finance</h2>
                     <p class="text-gray-600 mb-4 text-lg">Clarity Financial is a New Zealand-based consultancy dedicated to providing honest and transparent financial advice. Our mission is to demystify the complexities of insurance and mortgages, empowering our clients to achieve their financial goals with confidence.</p>
                     <p class="text-gray-600 text-lg">We believe in building long-lasting relationships based on trust and a deep understanding of your unique circumstances.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="team" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Meet Our Team</h2>
+                    <p class="text-lg text-gray-600 mt-2">Experienced professionals dedicated to your success.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=Photo" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-900">Ben</h3>
+                        <p class="text-blue-600 font-medium mb-2">Lead Mortgage Advisor</p>
+                        <p class="text-gray-600">With over 15 years of experience in the banking and finance industry, Ben is an expert at structuring complex loans and finding the perfect solution for his clients.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white text-center p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=Photo" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-900">John Smith</h3>
+                        <p class="text-blue-600 font-medium mb-2">Senior Insurance Specialist</p>
+                        <p class="text-gray-600">John is passionate about ensuring his clients have the right protection in place. He specializes in personal and business risk insurance, providing peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mortgage Calculator Section -->
+        <section id="calculator" class="bg-white py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Mortgage Calculator</h2>
+                        <p class="text-lg text-gray-600 mt-2">Get an estimate of your mortgage repayments. This tool is for guidance purposes only.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="loanAmount" class="block text-sm font-medium text-gray-700">Loan Amount ($)</label>
+                                <input type="number" id="loanAmount" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-gray-200 rounded-md text-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., 500000" value="500000">
+                            </div>
+                            <div>
+                                <label for="interestRate" class="block text-sm font-medium text-gray-700">Interest Rate (%)</label>
+                                <input type="number" id="interestRate" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-gray-200 rounded-md text-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., 6.5" step="0.01" value="6.5">
+                            </div>
+                            <div>
+                                <label for="loanTerm" class="block text-sm font-medium text-gray-700">Loan Term (years)</label>
+                                <input type="number" id="loanTerm" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-gray-200 rounded-md text-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., 30" value="30">
+                            </div>
+                            <div>
+                                <label for="repaymentFrequency" class="block text-sm font-medium text-gray-700">Repayment Frequency</label>
+                                <select id="repaymentFrequency" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-gray-200 rounded-md text-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="monthly">Monthly</option>
+                                    <option value="fortnightly">Fortnightly</option>
+                                    <option value="weekly">Weekly</option>
+                                </select>
+                            </div>
+                            <button id="calculateBtn" class="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition duration-300">Calculate</button>
+                        </div>
+                        <div id="calculatorResult" class="mt-8 text-center bg-blue-50 p-6 rounded-lg" style="display: none;">
+                            <p id="paymentFrequencyText" class="text-lg text-gray-600">Estimated Monthly Payment:</p>
+                            <p id="repaymentAmount" class="text-4xl font-bold text-blue-800"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,6 +255,59 @@
 
         sections.forEach(section => {
             observer.observe(section);
+        });
+
+        // Mortgage Calculator Logic
+        const calculateBtn = document.getElementById('calculateBtn');
+        calculateBtn.addEventListener('click', () => {
+            const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const loanTerm = parseInt(document.getElementById('loanTerm').value);
+            const frequency = document.getElementById('repaymentFrequency').value;
+            
+            const resultDiv = document.getElementById('calculatorResult');
+            const repaymentAmountEl = document.getElementById('repaymentAmount');
+            const paymentFrequencyTextEl = document.getElementById('paymentFrequencyText');
+
+            if (loanAmount > 0 && interestRate > 0 && loanTerm > 0) {
+                let periodsPerYear;
+                let frequencyText;
+
+                switch (frequency) {
+                    case 'weekly':
+                        periodsPerYear = 52;
+                        frequencyText = 'Weekly';
+                        break;
+                    case 'fortnightly':
+                        periodsPerYear = 26;
+                        frequencyText = 'Fortnightly';
+                        break;
+                    case 'monthly':
+                    default:
+                        periodsPerYear = 12;
+                        frequencyText = 'Monthly';
+                        break;
+                }
+
+                const periodicInterestRate = interestRate / 100 / periodsPerYear;
+                const numberOfPayments = loanTerm * periodsPerYear;
+
+                const numerator = periodicInterestRate * Math.pow(1 + periodicInterestRate, numberOfPayments);
+                const denominator = Math.pow(1 + periodicInterestRate, numberOfPayments) - 1;
+                const periodicPayment = loanAmount * (numerator / denominator);
+
+                if (isFinite(periodicPayment)) {
+                    paymentFrequencyTextEl.textContent = `Estimated ${frequencyText} Payment:`;
+                    repaymentAmountEl.textContent = `$${periodicPayment.toLocaleString('en-NZ', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    resultDiv.style.display = 'block';
+                } else {
+                    repaymentAmountEl.textContent = 'Invalid values';
+                    resultDiv.style.display = 'block';
+                }
+            } else {
+                repaymentAmountEl.textContent = 'Please fill all fields';
+                resultDiv.style.display = 'block';
+            }
         });
     </script>
 </body>
